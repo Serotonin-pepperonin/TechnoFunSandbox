@@ -1,0 +1,17 @@
+<svg width="117" height="166" viewBox="0 0 117 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="58.5" cy="83.5" r="56" fill="url(#paint0_linear_3_76)" stroke="#424242" stroke-width="5"/>
+<mask id="path-2-inside-1_3_76" fill="white">
+<path d="M26 9C26 4.02944 30.0294 0 35 0H82C86.9706 0 91 4.02944 91 9V36H26V9Z"/>
+</mask>
+<path d="M21 9C21 1.26801 27.268 -5 35 -5H82C89.732 -5 96 1.26801 96 9H86C86 6.79086 84.2091 5 82 5H35C32.7909 5 31 6.79086 31 9H21ZM91 36H26H91ZM21 36V9C21 1.26801 27.268 -5 35 -5V5C32.7909 5 31 6.79086 31 9V36H21ZM82 -5C89.732 -5 96 1.26801 96 9V36H86V9C86 6.79086 84.2091 5 82 5V-5Z" fill="#424242" mask="url(#path-2-inside-1_3_76)"/>
+<mask id="path-4-inside-2_3_76" fill="white">
+<path d="M26 157C26 161.971 30.0294 166 35 166H82C86.9706 166 91 161.971 91 157V130H26V157Z"/>
+</mask>
+<path d="M21 157C21 164.732 27.268 171 35 171H82C89.732 171 96 164.732 96 157H86C86 159.209 84.2091 161 82 161H35C32.7909 161 31 159.209 31 157H21ZM91 130H26H91ZM21 130V157C21 164.732 27.268 171 35 171V161C32.7909 161 31 159.209 31 157V130H21ZM82 171C89.732 171 96 164.732 96 157V130H86V157C86 159.209 84.2091 161 82 161V171Z" fill="#424242" mask="url(#path-4-inside-2_3_76)"/>
+<defs>
+<linearGradient id="paint0_linear_3_76" x1="105.5" y1="46" x2="-34" y2="160.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#76BEE7"/>
+<stop offset="1" stop-color="#941EF1"/>
+</linearGradient>
+</defs>
+</svg>
