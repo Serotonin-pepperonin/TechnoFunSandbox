@@ -17,6 +17,7 @@ import watchon from "../img/watchon.svg";
 import watchoff from "../img/watchoff.svg";
 import tvon from "../img/tvon.svg";
 import tvoff from "../img/tvoff.svg";
+import MinimizeButton from "../components/MinimizeButton";
 
 export default function Ecosystem() {
   const [isPhoneActive, setPhoneActive] = useState(false);
@@ -32,6 +33,16 @@ export default function Ecosystem() {
   const [funValue, setFunValue] = useState(0);
 
   const [expanded, setExpanded] = React.useState(false);
+
+  const needMinimazeButton = () => {
+    if (expanded) {
+      return <MinimizeButton />;
+    }
+  };
+
+  const healthText = () => {
+    return "some text";
+  };
 
   //Health
   React.useEffect(() => {
@@ -114,8 +125,7 @@ export default function Ecosystem() {
 
   //Any
   React.useEffect(() => {
-    if (isPhoneActive
-    ) {
+    if (isPhoneActive) {
       setAnyActive(true);
     } else {
       setAnyActive(false);
@@ -136,6 +146,12 @@ export default function Ecosystem() {
         flexWrap: "nowrap",
       }}
     >
+      <div
+        style={{ position: "absolute", bottom: "10vh" }}
+        onClick={() => setExpanded(false)}
+      >
+        {needMinimazeButton()}
+      </div>
       <Typography sx={{ padding: "10px" }} align="center">
         Выбери устройства из экосистемы Galaxy!
       </Typography>
@@ -207,8 +223,7 @@ export default function Ecosystem() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body1" color="initial">
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
+              {}
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -233,8 +248,7 @@ export default function Ecosystem() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body1" color="initial">
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
+              {healthText()}
             </Typography>
           </AccordionDetails>
         </Accordion>
