@@ -6,6 +6,8 @@ import MinimizeButton from "../components/MinimizeButton";
 import EcosystemAccordion from "../components/EcosystemAccordion";
 
 export default function Ecosystem() {
+
+
   const [isPhoneActive, setPhoneActive] = useState(false);
   const [isWatchActive, setWatchActive] = useState(false);
   const [isTabActive, setTabActive] = useState(false);
