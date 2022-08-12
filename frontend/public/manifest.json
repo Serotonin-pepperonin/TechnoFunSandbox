@@ -3,9 +3,9 @@
   "name": "TechnoFun sandbox",
   "icons": [
     {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "77x31"
+      "src": "/frontend/public/tflogo.ico",
+      "type": "image/ico",
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",
