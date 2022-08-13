@@ -1,29 +1,31 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = {
+  isPhoneActive: false,
+  isWatchActive: false,
+  isTabActive: false,
+  isBudsActive: false,
+  isTvActive: false,
+};
+
 const ecosystemIconsSlice = createSlice({
   name: "ecosystemIcons",
-  initialState: {
-    isPhoneActive: false,
-    isWatchActive: false,
-    isTabActive: false,
-    isBudsActive: false,
-    isTvActive: false,
-  },
+  initialState,
   reducers: {
-    setPhoneActive(state, action) {
-      state.isPhoneActive = action.payload;
+    setPhoneActive(state) {
+      state.isPhoneActive = !state.isPhoneActive;
     },
-    setWatchActive(state, action) {
-      state.isWatchActive = action.payload;
+    setWatchActive(state) {
+      state.isWatchActive = !state.isWatchActive;
     },
-    setTabActive(state, action) {
-      state.isTabActive = action.payload;
+    setTabActive(state) {
+      state.isTabActive = !state.isTabActive;
     },
-    setBudsActive(state, action) {
-      state.isBudsActive = action.payload;
+    setBudsActive(state) {
+      state.isBudsActive = !state.isBudsActive;
     },
-    setTvActive(state, action) {
-      state.isTvActive = action.payload;
+    setTvActive(state) {
+      state.isTvActive = !state.isTvActive;
     },
   },
 });

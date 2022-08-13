@@ -12,7 +12,7 @@ export default function MinimizeButton() {
   const textChabge = () => {
     for (let i = text.length; i--; i > 0) {
       setInterval(() => {
-        setText(text.substring(0, i - 1))
+        setText(text.substring(0, i - 1));
       }, 1000);
     }
     if (text.length === 0) {

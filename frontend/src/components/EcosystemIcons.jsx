@@ -11,21 +11,18 @@ import watchoff from "../img/watchoff.svg";
 import sthingson from "../img/sthingon.svg";
 import sthingsoff from "../img/sthingsoff.svg";
 import { IconBox } from "../styles/IconBox";
-
-
-export default function EcosystemIcons({
-  isPhoneActive,
+import {
   setPhoneActive,
-  isWatchActive,
   setWatchActive,
-  isTabActive,
   setTabActive,
-  isBudsActive,
   setBudsActive,
-  isTvActive,
   setTvActive,
-}) {
+} from "../store/ecosystemIconsSlice";
+import { useSelector, useDispatch } from "react-redux";
 
+export default function EcosystemIcons({}) {
+  const ecosystemIcons = useSelector((state) => state.ecosystemIcons);
+  const dispatch = useDispatch();
 
   return (
     <div
@@ -48,42 +45,41 @@ export default function EcosystemIcons({
           alignSelf: "center",
         }}
       >
-        <div style={IconBox} onClick={() => setPhoneActive(!isPhoneActive)}>
+        <div style={IconBox} onClick={() => dispatch(setPhoneActive())}>
           <img
-            src={isPhoneActive ? phoneon : phoneoff}
+            src={ecosystemIcons.isPhoneActive ? phoneon : phoneoff}
             height="70%"
             alt="phone"
             style={{ padding: "0px 5px" }}
           />
         </div>
-        <div style={IconBox} onClick={() => setWatchActive(!isWatchActive)}>
+        <div style={IconBox} onClick={() => dispatch(setWatchActive())}>
           <img
-            src={isWatchActive ? watchon : watchoff}
+            src={ecosystemIcons.isWatchActive ? watchon : watchoff}
             height="70%"
             alt="watch"
             style={{ padding: "0px 5px" }}
           />
         </div>
-        <div style={IconBox}>
+        <div style={IconBox} onClick={() => dispatch(setBudsActive())}>
           <img
-            src={isBudsActive ? budson : budsoff}
+            src={ecosystemIcons.isBudsActive ? budson : budsoff}
             height="70%"
             alt="buds"
             style={{ padding: "0px 5px" }}
-            onClick={() => setBudsActive(!isBudsActive)}
           />
         </div>
-        <div style={IconBox} onClick={() => setTabActive(!isTabActive)}>
+        <div style={IconBox} onClick={() => dispatch(setTabActive())}>
           <img
-            src={isTabActive ? tabon : taboff}
+            src={ecosystemIcons.isTabActive ? tabon : taboff}
             height="50%"
             alt="tab"
             style={{ padding: "0px 5px" }}
           />
         </div>
-        <div style={IconBox} onClick={() => setTvActive(!isTvActive)}>
+        <div style={IconBox} onClick={() => dispatch(setTvActive())}>
           <img
-            src={isTvActive ? sthingson : sthingsoff}
+            src={ecosystemIcons.isTvActive ? sthingson : sthingsoff}
             height="70%"
             alt="tv"
             style={{ padding: "0px 5px" }}
