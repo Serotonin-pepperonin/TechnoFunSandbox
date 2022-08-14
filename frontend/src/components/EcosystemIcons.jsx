@@ -40,8 +40,7 @@ export default function EcosystemIcons({}) {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          maxWidth: "95vw",
-          minWidth: "80vw",
+          minWidth: "60vw",
           alignSelf: "center",
         }}
       >

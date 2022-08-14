@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-
+import React from "react";
 import EcosystemIcons from "../components/EcosystemIcons";
-import MinimizeButton from "../components/MinimizeButton";
-import EcosystemAccordion from "../components/EcosystemAccordion";
+import EcosystemAccordion from "../components/EcosystemAccordion.tsx";
 
 export default function Ecosystem() {
   return (
@@ -16,7 +14,6 @@ export default function Ecosystem() {
       }}
     >
       <EcosystemIcons />
-
       <EcosystemAccordion />
     </div>
   );
