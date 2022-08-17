@@ -6,7 +6,6 @@ import type { RootState} from '../store'
 import MyAccordion from "./MyAccordion.tsx";
 
 
-
 export default function EcosystemAccordion() {
   const [productivityValue, setProductivityValue] = React.useState(0);
   const [healthValue, setHealthValue] = React.useState(0);
@@ -22,23 +21,15 @@ export default function EcosystemAccordion() {
 
   const accordionData = [
     {value: productivityValue,
-      handleChangePanel: handleChangePanel,
-      expanded: expanded,
       panelName: "Продуктивность",
       color: "rgb(140, 80, 240)"},
     {value: healthValue,
-      handleChangePanel: handleChangePanel,
-      expanded: expanded,
       panelName: "Здоровье",
       color: "rgb(140, 180, 140)"},
     {value: artValue,
-      handleChangePanel: handleChangePanel,
-      expanded: expanded,
       panelName: 'Творчество',
       color: "rgb(40, 180, 240)"},
     {value: funValue,
-      handleChangePanel: handleChangePanel,
-      expanded: expanded,
       panelName: 'Веселье',
       color: "rgb(140, 180, 40)"},
   ]
@@ -124,8 +115,8 @@ export default function EcosystemAccordion() {
         <MyAccordion
         key={panel.panelName}
         value={panel.value}
-        handleChangePanel = {panel.handleChangePanel}
-        expanded = {panel.expanded}
+        handleChangePanel = {handleChangePanel}
+        expanded = {expanded}
         panelName = {panel.panelName}
         color = {panel.color}
         >

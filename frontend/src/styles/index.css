@@ -1,9 +1,27 @@
-
+@font-face {
+  font-family: "Guess";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Guess.ttf) format('truetype');
+}
 
 body {
   margin: 0;
   box-sizing: border-box;
   /* background-color: black; */
 }
+
+.guesslogo{
+  font-family: 'Guess';
+  color: yellow;
+  letter-spacing: 10px;
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: blue;
+  font-size: 10vh;
+  text-shadow: -10px 10px 6px black;
+  align-self: flex-end;
+}
+
+
 
 
