@@ -34,7 +34,7 @@ export default function EcosystemIcons({}) {
       }}
     >
       <Typography sx={{ padding: "10px" }} align="center">
-        Выберете устройства из экосистемы Galaxy!
+        Выбери устройства из экосистемы!
       </Typography>
       <div
         style={{
